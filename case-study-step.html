@@ -235,6 +235,9 @@
     .hero-meta { flex-wrap: wrap; gap: 1.25rem; }
     .impact-nums { gap: 3rem; }
   }
+
+  .hero-meta { flex-wrap: wrap; row-gap: 1.25rem; }
+  .hero-meta > div { flex: 1 1 200px; }
 </style>
 </head>
 <body>
@@ -266,7 +269,7 @@
           <span class="metric-label">KYC Completion</span>
         </div>
         <div class="metric">
-          <span class="metric-num">+51%</span>
+          <span class="metric-num">+50%</span>
           <span class="metric-label">First Transaction Conversion</span>
         </div>
       </div>
@@ -274,15 +277,38 @@
       <div class="hero-meta fade fade-5">
         <div>
           <div class="meta-key">Role</div>
-          <div class="meta-val">Lead Product Designer & Product Manager (Growth)</div>
+          <div class="meta-val">Senior Product Designer, Growth (acting PM)</div>
         </div>
         <div>
           <div class="meta-key">Scope</div>
           <div class="meta-val">Strategy, experimentation, execution, stakeholder & leadership alignment</div>
         </div>
+        <div>
+          <div class="meta-key">Team</div>
+          <div class="meta-val">Me (design + acting PM), an engineering manager, and front-end, back-end, and mobile engineers</div>
+        </div>
+        <div>
+          <div class="meta-key">How it was measured</div>
+          <div class="meta-val">50/50 A/B test, about 2 months</div>
+        </div>
       </div>
     </div>
   </div>
+
+  <!-- CONTEXT & CONSTRAINTS -->
+  <section>
+    <div class="container">
+      <span class="label">Context &amp; constraints</span>
+      <h2>Fixing signup without removing the step that <em>hurt most</em></h2>
+      <p>Step is a fintech app, so identity verification (KYC), including a Social Security Number, is required by law. Whatever we changed, that step had to stay.</p>
+      <ul class="bullets">
+        <li><span><strong style="color:var(--text);font-weight:400;">Regulation:</strong> KYC and the SSN request are legally required.</span></li>
+        <li><span><strong style="color:var(--text);font-weight:400;">Leadership:</strong> expected a shorter flow to be the fix.</span></li>
+        <li><span><strong style="color:var(--text);font-weight:400;">Team:</strong> me as designer and acting PM, an engineering manager, and front-end, back-end, and mobile engineers.</span></li>
+        <li><span><strong style="color:var(--text);font-weight:400;">Bar for proof:</strong> every change shipped as a 50/50 A/B test, run for about two months.</span></li>
+      </ul>
+    </div>
+  </section>
 
   <!-- PROBLEM -->
   <section>
@@ -391,7 +417,7 @@
       <span class="label">Solution</span>
 
       <h2>Personalizing the moment that matters most</h2>
-      <p>Based on the experiment, I expanded personalization into the KYC step — tailoring messaging to each user's selected goal and connecting their motivation directly to identity verification.</p>
+      <p>The pilot alone moved KYC only slightly. The bigger lift came from carrying each user's goal into the KYC step itself: tailoring the messaging to what they said they wanted and connecting that motivation directly to identity verification.</p>
       <div class="ba-grid">
         <div class="ba-card">
           <div class="ba-label-bar before">Before — Generic</div>
@@ -409,7 +435,47 @@
           </div>
         </div>
       </div>
-      <p class="ba-note">Connecting user motivation to identity verification increased trust — and completion.</p>
+      <p class="ba-note">Connecting user motivation to identity verification doubled completion.</p>
+      <div class="result-box" style="margin-top: 1.75rem;">
+        <span class="label">How we measured</span>
+        <ul class="bullets">
+          <li>50/50 A/B test: half of users saw the original experience, half saw the new one.</li>
+          <li>Ran for about two months, so the data was stable before we drew conclusions.</li>
+          <li>KYC completion and first-transaction conversion compared the test group against the control group.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW I WORKED -->
+  <section>
+    <div class="container">
+      <span class="label">How I worked</span>
+      <h2>Designer and acting PM on <em>the same project</em></h2>
+      <p>Owning both roles meant the design reasoning and the business case had to be the same story.</p>
+      <div class="challenge-list">
+        <div class="challenge-item">
+          <div class="challenge-num">i</div>
+          <div class="challenge-text">
+            <h4>Scoping and the business case</h4>
+            <p>As acting PM, I scoped the initiative, tied it to KYC completion and first-transaction conversion, and secured C-level buy-in to test it.</p>
+          </div>
+        </div>
+        <div class="challenge-item">
+          <div class="challenge-num">ii</div>
+          <div class="challenge-text">
+            <h4>Reasoning on the record</h4>
+            <p>I documented the rationale behind each design decision, so every conversation with leadership started from the same written argument, not from opinions.</p>
+          </div>
+        </div>
+        <div class="challenge-item">
+          <div class="challenge-num">iii</div>
+          <div class="challenge-text">
+            <h4>Engineering from the start</h4>
+            <p>Engineers saw the goals and the reasoning before designs were final, then got an in-depth kickoff walkthrough and regular check-ins through the build.</p>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -456,7 +522,7 @@
           <span class="big-label">Increase in KYC completion</span>
         </div>
         <div class="impact-num">
-          <span class="big-num">+51%</span>
+          <span class="big-num">+50%</span>
           <span class="big-label">Increase in first transaction conversion</span>
         </div>
       </div>
@@ -493,8 +559,8 @@
         <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg>
         All work
       </a>
-      <a class="footer-link" href="#">
-        Next project
+      <a class="footer-link" href="case-study-account-progress.html">
+        Next: Account Progress
         <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg>
       </a>
     </div>
