@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Case Study — GoodFail</title>
+<title>Case Study: GoodFail</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=League+Gothic&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -58,7 +58,7 @@
   /* LABEL */
   .label { font-family: var(--sans); font-size: 0.62rem; font-weight: 700; letter-spacing: 0.22em; text-transform: uppercase; color: var(--red); display: block; margin-bottom: 1.25rem; }
 
-  /* HEADINGS — main section headers in League Gothic */
+  /* HEADINGS - main section headers in League Gothic */
   h1 { font-family: var(--display); font-size: clamp(3rem, 7vw, 4.75rem); font-weight: 400; line-height: 0.98; color: var(--ink); margin-bottom: 1.5rem; letter-spacing: 0.005em; }
   h1 em { font-style: normal; color: var(--red); }
   h2 { font-family: var(--display); font-size: clamp(2rem, 4.5vw, 3rem); font-weight: 400; line-height: 1.02; color: var(--ink); margin-bottom: 1rem; letter-spacing: 0.005em; }
@@ -110,7 +110,7 @@
   .muted-block ul.bullets li::before { background: var(--text-muted); }
   .muted-block p { color: var(--text-muted); }
 
-  /* CALLOUT BLOCK (navy — for forward-looking / thesis) */
+  /* CALLOUT BLOCK (navy - for forward-looking / thesis) */
   .callout-block { border: 2px solid var(--navy); border-left: 8px solid var(--navy); padding: 2rem 2.5rem; border-radius: 2px; margin: 1.75rem 0; background: var(--surface); }
   .callout-block .label { color: var(--navy); }
   .callout-block h2 { color: var(--ink); }
@@ -233,7 +233,7 @@
         <span class="hero-line"></span>
       </div>
       <h1 class="fade fade-2"><em>GoodFail</em>: a workout tracker with a <em>focused UX</em></h1>
-      <p class="fade fade-3 hero-intro">As a designer, I can now build functional apps and solve real problems myself, without the overhead a startup carries. When the focus stays on user experience instead of aggressive monetization, the product can solve the problem better. GoodFail is that idea in practice: a workout building and tracking app whose core logging mechanic pushes you to focus and perform at a higher level.</p>
+      <p class="fade fade-3 hero-intro">As a designer, I can now build functional apps and solve real problems myself, without the overhead a startup carries. When the focus stays on user experience and away from aggressive monetization, the product can solve the problem better. GoodFail is that idea in practice: a workout building and tracking app whose core logging mechanic pushes you to focus and perform at a higher level.</p>
 
       <div class="hero-cta-row fade fade-3">
         <a class="cta-btn" href="https://ethanholzer.github.io/overload/" target="_blank" rel="noopener">Open the live app <span class="cta-arrow" aria-hidden="true">&#8599;</span></a>
@@ -296,7 +296,7 @@
     <div class="container">
       <span class="label">Problem</span>
 
-      <h2>Workout apps are focusing on mass appeal and profit, <em>not solving the problem</em>.</h2>
+      <h2>Workout apps chase mass appeal and profit, and the <em>core problem gets lost</em>.</h2>
       <p>Startups are great early on, when they get to focus on the problem they set out to solve. But as time goes on, their investors are looking for a return.</p>
       <p>That dynamic tends to turn a good app's pursuit of solving user problems into a pursuit of profitability. As a result, you get:</p>
       <ul class="bullets">
@@ -314,7 +314,7 @@
       <span class="label">Process</span>
       <div class="aha-block">
         <h2>Research by <em>building</em></h2>
-        <p>Instead of front-loading competitive research and a fixed scope, I got a working build into real workouts as early as possible and let use drive the design. The design &rarr; build &rarr; test &rarr; iterate loop that AI makes possible meant each round replaced a guess with something we'd actually felt mid-set.</p>
+        <p>I got a working build into real workouts as early as possible and let real use drive the design, with research and scope taking shape along the way. The design &rarr; build &rarr; test &rarr; iterate loop that AI makes possible meant each round replaced a guess with something we'd actually felt mid-set.</p>
 <ul class="bullets">
 <li>2 testers: me and my wife</li>
 <li>100+ workouts logged: 90+ mine, about 12 hers</li>
@@ -406,7 +406,7 @@
       <span class="label">Design to Build</span>
 
       <h2>Closing the gap between <em>Figma and product</em></h2>
-      <p>What sets this project apart is that I didn't stop at the mockup. I built it. Working from my Figma designs, I used an AI-assisted workflow to turn each screen into a functioning app, reading exact values back from Figma using the Figma Desktop Bridge plugin with Claude Code so the build stayed true to the design. The whole project ran on about $50 of Figma and Claude subscriptions.</p>
+      <p>I built GoodFail myself. Working from my Figma designs, I used an AI-assisted workflow to turn each screen into a functioning app, reading exact values back from Figma using the Figma Desktop Bridge plugin with Claude Code so the build stayed true to the design. The whole project ran on about $50 of Figma and Claude subscriptions.</p>
 
       <div class="flow-steps">
         <div class="flow-step active">
@@ -481,7 +481,7 @@
           <div class="challenge-num">02</div>
           <div class="challenge-text">
             <h4>Making the frame feel native on a phone</h4>
-            <p>The app had to lock to the viewport so only intended areas scroll, and respect the notch and home-indicator safe areas. These details are invisible on desktop but essential to feeling like a real app.</p>
+            <p>The app had to lock to the viewport so only intended areas scroll, and respect the notch and home-indicator safe areas. On a phone, these details decide whether it feels like a real app.</p>
           </div>
         </div>
         <div class="challenge-item">
@@ -505,7 +505,7 @@
         <div class="takeaway-card">
           <span class="takeaway-num">01</span>
           <h4>Supersets</h4>
-          <p>Working multiple movements back to back is a staple of serious training. GoodFail should treat a superset as a first-class part of building a workout, not a workaround.</p>
+          <p>Working multiple movements back to back is a staple of serious training. GoodFail should treat a superset as a first-class part of building a workout.</p>
         </div>
         <div class="takeaway-card">
           <span class="takeaway-num">02</span>
@@ -533,7 +533,7 @@
         <p>A true progressive-overload engine, grounded in training science. Using the RPE effort rating on each set alongside the weight and reps you log, the app should recommend whether to add reps or add weight next time, so every exercise drives toward quality muscular failure: the Good Fail it's named for.</p>
       </div>
 
-      <p>Get that right, and GoodFail stops being a place to record your training and becomes something closer to a coach in your pocket.</p>
+      <p>Get that right, and GoodFail becomes something closer to a coach in your pocket.</p>
     </div>
   </section>
 
