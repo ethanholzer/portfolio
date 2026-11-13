@@ -317,7 +317,7 @@
     <span class="cs-status cs-fade"><span class="cs-dot"></span>Finishing development &middot; App Store soon</span>
     <h1 class="cs-h1 cs-fade cs-d2">FailUp: a workout tracker built around <span class="cs-fbox">failure</span></h1>
     <p class="cs-intro cs-fade cs-d3">FailUp is a progressive overload workout tracker I designed and built solo with AI. It’s in the final stretch of development, with the App Store release coming as a one-time purchase, no subscription and no account. Below is the FailUp homepage, designed in the app’s own design system.</p>
-    <div class="cs-cta-row cs-fade cs-d3"><a class="cs-cta" href="https://ethanholzer.github.io/FailUp/" target="_blank" rel="noopener">Try the web version <span aria-hidden="true">&#8599;</span></a></div>
+    <div class="cs-cta-row cs-fade cs-d3"><a class="cs-cta" href="https://ethanholzer.github.io/failup/" target="_blank" rel="noopener">Try the web version <span aria-hidden="true">&#8599;</span></a></div>
     <div class="cs-meta cs-fade cs-d4">
       <div><div class="cs-k">Role</div><div class="cs-v">Product Designer &amp; AI-Assisted Developer</div></div>
       <div><div class="cs-k">Scope</div><div class="cs-v">Concept, UX, UI, Design System, Marketing Site, Build</div></div>
@@ -344,7 +344,7 @@
       <p class="lead">The method is simple: Complete every rep of every set, or fail trying. With failure comes growth, and with growth comes gains!</p>
       <div class="cta-row">
         <a class="btn" href="#price">Coming soon to the App Store</a>
-        <a class="btn2" href="https://ethanholzer.github.io/FailUp/" target="_blank" rel="noopener">Try it in your browser</a>
+        <a class="btn2" href="https://ethanholzer.github.io/failup/" target="_blank" rel="noopener">Try it in your browser</a>
       </div>
       <p class="fine">One price · No subscription · No account</p>
     </div>
@@ -517,7 +517,7 @@
 <div class="cs-container">
   <div class="cs-footer">
     <a class="cs-flink" href="index.html"><svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg>All work</a>
-    <a class="cs-flink" href="case-study-daily-trivia.html">Previous: Daily Trivia<svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg></a>
+    <a class="cs-flink" href="case-study-step.html">Next: Step<svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg></a>
   </div>
 </div>
 
@@ -566,7 +566,7 @@ const toastEl = document.querySelector('[data-toast]');
 let toastT;
 const toast = msg => { toastEl.textContent = msg; toastEl.classList.add('on'); clearTimeout(toastT); toastT = setTimeout(() => toastEl.classList.remove('on'), 2400); };
 document.querySelector('[data-share]').addEventListener('click', async () => {
-  const data = { title: 'FailUp', text: 'FailUp turns your hardest set into your next goal, buy it once, no subscription', url: 'https://ethanholzer.github.io/FailUp/' };
+  const data = { title: 'FailUp', text: 'FailUp turns your hardest set into your next goal, buy it once, no subscription', url: 'https://ethanholzer.github.io/failup/' };
   if (navigator.share) { try { await navigator.share(data); } catch {} return; }
   try { await navigator.clipboard.writeText(data.url); toast('Link copied'); } catch { toast(data.url); }
 });
